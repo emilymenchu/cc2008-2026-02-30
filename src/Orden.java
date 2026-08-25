@@ -4,19 +4,20 @@ public class Orden {
     private int numeroOrden;
     private String nombrePropietario;
     private String placa;
-    private String descripcionServicio;
+    private String descripcion;
     private double costoEstimado;
 
     // Constructor
-    public Orden(int numeroOrden, String nombrePropietario, String placa, String descripcionServicio, double costoEstimado) {
+    public Orden(int numeroOrden, String nombrePropietario, String placa, String descripcion, double costoEstimado) {
         this.numeroOrden = numeroOrden;
         this.nombrePropietario = nombrePropietario;
         this.placa = placa;
-        this.descripcionServicio = descripcionServicio;
+        this.descripcion = descripcion;
         this.costoEstimado = costoEstimado;
     }
 
     // Métodos
+
     public int getNumeroOrden() {
         return numeroOrden;
     }
@@ -29,8 +30,8 @@ public class Orden {
         return costoEstimado;
     }
 
-    public void setDescripcionServicio(String descripcionServicio) {
-        this.descripcionServicio = descripcionServicio;
+    public void setDescripcionServicio(String descripcion) {
+        this.descripcion = descripcion;
     }
 
     public void setCostoEstimado(double costoEstimado) {
@@ -49,7 +50,7 @@ public class Orden {
             numeroOrden,
             nombrePropietario,
             placa,
-            descripcionServicio,
+            descripcion,
             costoEstimado
         );
     }
