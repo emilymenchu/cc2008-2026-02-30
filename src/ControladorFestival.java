@@ -260,30 +260,15 @@ public class ControladorFestival {
                 }
             }
 
-            String nombre =
-                    vista.pedirString(
-                            "Ingrese el nombre artístico: "
-                    );
+            String nombre = vista.pedirString("Ingrese el nombre artístico: ");
 
-            String genero =
-                    vista.pedirString(
-                            "Ingrese el género musical: "
-                    );
+            String genero =vista.pedirString( "Ingrese el género musical: ");
 
-            float duracion =
-                    vista.pedirFloat(
-                            "Ingrese la duración de la presentación en minutos: "
-                    );
+            float duracion = vista.pedirFloat("Ingrese la duración de la presentación en minutos: ");
 
-            int asistentes =
-                    vista.pedirInt(
-                            "Ingrese la cantidad estimada de asistentes: "
-                    );
+            int asistentes = vista.pedirInt("Ingrese la cantidad estimada de asistentes: ");
 
-            String escenario =
-                    vista.pedirString(
-                            "Ingrese el código del escenario: "
-                    );
+            String escenario = vista.pedirString("Ingrese el código del escenario: ");
 
             Artista nuevoArtista =
                     new Artista(
@@ -297,9 +282,7 @@ public class ControladorFestival {
 
             artistas.add(nuevoArtista);
 
-            vista.mostrarMensaje(
-                    "Artista registrado exitosamente :D"
-            );
+            vista.mostrarMensaje("Artista registrado exitosamente :D");
 
         } catch (IllegalArgumentException e) {
 
@@ -657,4 +640,4 @@ public class ControladorFestival {
         return suma / artistas.size();
     }
     
-    }
+}

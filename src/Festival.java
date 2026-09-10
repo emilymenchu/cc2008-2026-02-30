@@ -4,9 +4,10 @@ public class Festival {
     private String codigoFestival;
     private String nombreCoordinador;
 
+    // Constructor 
     public Festival(String nombreFestival, String codigoFestival, String nombreCoordinador) {
         if (nombreFestival.isEmpty()) {
-            throw new IllegalArgumentException("El nombre del festival no puede estar vacío :/");
+            throw new IllegalArgumentException("El nombre del festival no puede estar vacío :/"); // Se conservó el lanzamiento de excepciones para proteger al objeto.
         }
 
         if (codigoFestival.isEmpty()) {
